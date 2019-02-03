@@ -1,0 +1,156 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+	.section-install
+		&_btn
+			margin-top: 20px
+			width: 100%
+
+	.footer
+		&_main-phone 
+			a
+				font-size: 18px
+
+		&_phone 
+			p 
+				a
+					font-size: 16px
+
+	.header
+		&_logo
+			margin-left: 0
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.menu-mobile
+		position: fixed
+		width: 100%
+		height: 100vh
+		background-color: #2cd3b8
+		left: 0
+		margin: 0
+		top: 0
+		z-index: 99
+		display: flex
+		align-items: center
+		justify-content: center
+		transform: translateY(-100%)
+
+	.container-fluid
+		max-width: 680px
+
+	.container
+		max-width: 680px
+
+	.active-menu 
+		transform: translateY(0%)
+
+	.hidden
+		display: none
+
+	.footer
+		padding: 55px 0
+
+	.section-product
+		&_ul
+			margin-top: 0
+			li 
+				margin-bottom: 45px
+
+	.header 
+		background: none
+		height: 165px
+		&_logo
+			margin: 0
+			img
+				width: 230px
+		&_mobile
+			display: flex
+			align-items: center
+
+	.menu
+		&_ul
+			text-align: center
+		&_li
+			padding: 0
+			display: block
+			a
+				color: #fff
+
+	.menu-wrap
+		height: 165px
+		width: 100%
+		display: inline-block
+		text-align: center
+
+	.btn
+		font-size: 24px
+		width: 100%
+
+	.section-install
+		&_btn
+			margin-top: 30px
+
+	.section-profit
+		&_btn
+			margin-top: 30px
+
+	.section-step
+		&_step
+			margin-left: 0
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.btn 
+		font-size: 11px
+
+	.header_logo 
+		img
+			width: 100px
+
+	.menu-wrap
+		height: 100px
+
+	.header
+		height: 100px
+
+	.menu-link
+		span
+			width: 40px
+
+	.section
+		padding: 40px 0
+
+	.step-content 
+		width: 50%
+
+	.section-profit
+		&_li
+			font-size: 15px
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	
+// ≤768px
++media-breakpoint-up(md)
+	.hidden-lg
+		display: none
+	.close-btn
+		display: none
+// ≤992px
++media-breakpoint-up(lg)
+	
+// ≤1200px
++media-breakpoint-up(xl)
